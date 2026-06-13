@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase</title>
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: yellowgreen;
+            background-image: url("pexels-pixabay-268533.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color:black;
+        }
+
+        .container {
+            width: 90%; /*occupies 90% of width */
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0; /*the purpose of padding is to give gap with container  */
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: white;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* Menu */
+        .menu {
+            display: flex; /*for adapting to different size*/
+            justify-content: space-between; /* make them all in strait line*/
+            gap: 30px;
+            flex-wrap: wrap; /*for adapting to different size wraps to next line if space needed*/
+        }
+
+        .menu-item {
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden; /* Content outside of the container is hidden */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;  /*add transiton*/
+            text-align: center;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px); /*connected to transform in transiton above*/
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 20px;
+        }
+
+        .menu-link img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /*either use cover or contains adjusts ratio to fit in box or div */
+            border-radius: 50%;
+        }
+
+        .menu-link h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            bottom: 0%;
+            left: 0%;
+        }
+    </style>
+</head>
+<div class="container">
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio Showcase</h1>
+            <p>Click on a name to view the portfolio</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="person1.html" class="menu-link">
+                        <img src="WhatsApp Image 2024-11-23 at 17.45.45_64c42228.jpg" alt="Abdullah Bin Mansoor">
+                        <h3>Abdullah Mansoor</h3>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="person2.html" class="menu-link">
+                        <img src="IMG-20241123-WA0020[1].jpg" alt="Bazil Uddin">
+                        <h3>Bazil Uddin</h3>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="person3.html" class="menu-link">
+                        <img src="WhatsApp Image 2024-11-24 at 17.10.36_6e606a98.jpg" alt="Abdull Bari">
+                        <h3>Abdul Bari</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio Showcase</p>
+        </div>
+    </footer>
+</div>
+    
+    

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Profile</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      background-image: url("pexels-therato-1933320.jpg");
+          background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    }
+
+    .profile-card {
+      justify-content: center;
+      
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .center_div{
+      justify-content: center;
+      margin: auto;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 5px solid #4caf50; 
+    }
+
+    .profile-details {
+      padding: 20px;
+    }
+
+    .profile-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .profile-title {
+      font-size: 1.2rem;
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
+
+    .profile-description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-info li {
+      font-size: 1.2rem;
+    }
+
+    .contact-info li a {
+      color: #4caf50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info li a:hover {
+      color: #2e7d32; 
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #4caf50;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #388e3c; 
+    }
+
+    footer {
+            margin-top: 30px;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            background-color:rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+    }
+
+    .menu {
+      display: flex; /* Aligns items horizontally */
+      justify-content: space-between; /* Adds space between child elements */
+      gap: 20px; 
+      flex-wrap: nowrap; /* Prevents wrapping of items */
+      width: 100%; /* Makes sure it spans the whole container */
+}
+
+
+  .menu-item {
+  flex-grow: 1; /* Allows the empty div to take the rest of the space */
+ background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  margin: 10px; /* Adds spacing around the empty div */
+  padding: 20px; /* Adds inner spacing */
+}
+
+.section-title {
+  font-size: 1.8rem; /* Larger font for titles */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.section-content {
+  font-size: 1.2rem; 
+  color: #ffffff;
+  line-height: 1.8; 
+  margin-bottom: 20px;
+  list-style: disc; /* Adds bullet points for list format */
+  padding-left: 20px; 
+}
+
+  </style>
+</head>
+<body>
+  <div class="center_div">
+  <div class="menu">
+  <div class="profile-card">
+    <!-- Profile Image -->
+    <img src="WhatsApp Image 2024-11-23 at 17.45.45_64c42228.jpg" alt="Person Image" class="profile-image">
+
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <h1 class="profile-name">Abdullah Bin Mansoor</h1>
+      <h2 class="profile-title">Ai Developer</h2>
+      <p class="profile-description">
+        "Driven by a deep curiosity for technology, I am passionate about artificial intelligence and its transformative potential. I love exploring how AI can solve complex problems, enhance human creativity, and revolutionize industries. From understanding machine learning algorithms to envisioning real-world applications, I’m fascinated by how AI bridges the gap between innovation and impact. My journey in AI is fueled by a desire to continuously learn, build, and contribute to a future where intelligent systems positively shape our world."
+      </p>
+
+      <!-- Contact Info -->
+      <ul class="contact-info">
+        <li><a href="abdullahmansoor200005@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
+    <!-- Back to Main Menu Button -->
+  <a href="index.html" class="btn-back">Back to Main Menu</a>
+  </div>
+  <div class="menu-item">
+    <h2 class="section-title">Achievements in AI</h2>
+    <ul class="section-content">
+      <li>Developed predictive AI models that increased decision-making efficiency by 30% for business applications.</li>
+      <li>Designed cutting-edge NLP algorithms to automate text summarization and sentiment analysis, reducing manual effort.</li>
+      <li>Built computer vision systems for object detection and recognition, used in real-time surveillance and healthcare projects.</li>
+      <li>Earned recognition in international AI hackathons for innovative solutions in automation and data intelligence.</li>
+      <li>Published research articles on ethical AI implementation in emerging industries.</li>
+    </ul>
+  
+    <h2 class="section-title">Languages I Speak</h2>
+    <ul class="section-content">
+      <li><b>English:</b> Professional proficiency, ideal for technical documentation and cross-cultural collaboration.</li>
+      <li><b>Urdu:</b> Native language, facilitating connections with local and regional communities.</li>
+      <li><b>Arabic:</b> Intermediate proficiency, allowing communication with Middle Eastern professionals.</li>
+    </ul>
+  
+    <h2 class="section-title">Future Ambitions</h2>
+    <ul class="section-content">
+      <li>To lead AI-driven projects that revolutionize industries, focusing on healthcare, education, and sustainability.</li>
+      <li>To develop AI solutions that are inclusive and accessible to marginalized communities worldwide.</li>
+      <li>To contribute to the ethical framework of AI, ensuring responsible and fair implementation globally.</li>
+      <li>To mentor future generations of AI professionals, sharing knowledge and fostering innovation.</li>
+      <li>To remain at the forefront of AI advancements, driving transformative changes in society.</li>
+    </ul>
+</div>
+</div>
+<div> <footer>© 2024 Abdullah Mansoor. All Rights Reserved.</footer></div>
+</div>
+</body>
+</html>
